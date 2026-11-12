@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    padding: 20px;
+}
+
+#btn-add {
+    padding: 10px 16px;
+    margin-bottom: 20px;
+    background-color: #0079d3;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#board {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    align-items: flex-start;
+}
+
+.lane {
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    min-width: 300px;
+    max-width: 300px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.lane-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+}
+
+.lane-header h2 {
+    font-size: 1.1rem;
+    margin-right: auto;
+}
+
+.btn-refresh, .btn-delete {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.btn-refresh {
+    background-color: #e5e7eb;
+}
+
+.btn-delete {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.post-card {
+    background: #f9fafb;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+    line-height: 1.5;
+}
+
+.error {
+    color: #b91c1c;
+    background: #fef2f2;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
